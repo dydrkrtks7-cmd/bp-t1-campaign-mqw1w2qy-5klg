@@ -13,4 +13,4 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://t1-campaign-mqw1w2qy-5klg.pages.dev/sitemap.xml
+Sitemap: https://dydrkrtks7-cmd.github.io/sitemap.xml
