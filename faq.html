@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-night-signal">
+    <title>자주 묻는 질문 - 풋쌤 동대문점</title>
+    <meta name="description" content="풋쌤 동대문점 방문 전 궁금한 점들을 해결해 드릴게요! 예약, 프로그램, 주차, 이용 팁까지, 여러분의 편안한 마사지를 위한 모든 질문과 답변을 확인하세요.">
+    <meta name="keywords" content="풋쌤 동대문점 FAQ, 을지로 마사지 질문, 동대문 마사지 예약, 마사지 주차, 마사지 이용 팁, 자주 묻는 질문, 마사지 궁금증">
+    <link rel="canonical" href="https://example.com/footssaem-dongdaemun/faq">
+    <meta name="telephone" content="010-7789-6899">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/footssaem-dongdaemun/faq">
+    <meta property="og:title" content="풋쌤 동대문점 - 자주 묻는 질문">
+    <meta property="og:description" content="풋쌤 동대문점 방문 전 궁금한 점들을 해결해 드릴게요! 예약, 프로그램, 주차, 이용 팁까지, 여러분의 편안한 마사지를 위한 모든 질문과 답변을 확인하세요.">
+    <meta property="og:image" content="https://example.com/images/og-image-faq.jpg"> -->
+
+    <!-- CSS 핵심: Placeholder for the actual CSS file or embedded styles -->
+    <style>
+        :root {
+            /* Theme specific colors and fonts */
+            --color-primary-brand-1: #FF2E63; /* Night Signal Red */
+            --color-primary-brand-2: #00ADB5; /* Night Signal Aqua */
+            --color-dark-surface: #222831; /* Deep Dark */
+            --color-accent-dark-1: #393E46; /* Muted Dark Grey */
+            --color-accent-dark-2: #1A1A1A; /* Even darker for contrast */
+            --color-accent-light-1: #EEEEEE; /* Bright Off-white */
+            --color-accent-light-2: #BBBBBB; /* Muted Light Grey */
+            --color-accent-light-3: #777777; /* Subtle Grey for borders */
+
+            --font-family-heading: 'Gothic A1', sans-serif; /* Example font */
+            --font-family-body: 'Noto Sans KR', sans-serif; /* Example font */
+
+            --text-h1: 3.5rem; /* ~56px */
+            --text-h2: 2.75rem; /* ~44px */
+            --text-h3: 2.25rem; /* ~36px */
+            --text-h4: 1.75rem; /* ~28px */
+            --text-body-lg: 1.25rem; /* ~20px */
+            --text-body-base: 1rem; /* ~16px */
+            --text-body-sm: 0.875rem; /* ~14px */
+        }
+
+        /* Basic Reset & Box-sizing */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            line-height: 1.6;
+            -webkit-text-size-adjust: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family-body);
+            color: var(--color-accent-light-1);
+            background-color: var(--color-dark-surface);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Full-bleed dark background with repeating-linear-gradient grid */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                0deg,
+                var(--color-dark-surface) 0px,
+                var(--color-dark-surface) 1px,
+                transparent 1px,
+                transparent 100px
+            ),
+            repeating-linear-gradient(
+                90deg,
+                var(--color-dark-surface) 0px,
+                var(--color-dark-surface) 1px,
+                transparent 1px,
+                transparent 100px
+            );
+            background-size: 100px 100px;
+            opacity: 0.05; /* Subtle grid */
+            z-index: -1;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-primary-brand-1); /* Default heading color */
+            margin-bottom: 0.5em;
+        }
+        h1 { font-size: var(--text-h1); }
+        h2 { font-size: var(--text-h2); }
+        h3 { font-size: var(--text-h3); }
+        h4 { font-size: var(--text-h4); }
+        p {
+            font-size: var(--text-body-base);
+            margin-bottom: 1em;
+            color: var(--color-accent-light-2);
+        }
+        a {
+            color: var(--color-primary-brand-2);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--color-primary-brand-1);
+            text-decoration: underline;
+        }
+
+        /* Utility classes (examples based on common design systems like Tailwind) */
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .grid {
+            display: grid;
+        }
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        .gap-8 { gap: 2rem; }
+        .col-span-full { grid-column: 1 / -1; }
+        /* Responsive grid columns */
+        @media (min-width: 768px) {
+            .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .md\:grid-cols-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+        }
+        @media (min-width: 1024px) {
+            .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+
+        .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+        .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+        .pt-2 { padding-top: 0.5rem; }
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .px-8 { padding-left: 2rem; padding-right: 2rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .font-bold { font-weight: 700; }
+        .font-semibold { font-weight: 600; }
+        .leading-tight { line-height: 1.2; }
+        .max-w-2xl { max-width: 42rem; }
+        .max-w-4xl { max-width: 56rem; }
+
+        /* Backgrounds */
+        .bg-dark-surface { background-color: var(--color-dark-surface); }
+        .bg-accent-dark-1 { background-color: var(--color-accent-dark-1); }
+        .bg-accent-dark-2 { background-color: var(--color-accent-dark-2); }
+        .bg-primary-brand-1 { background-color: var(--color-primary-brand-1); }
+
+        /* Text Colors */
+        .text-primary-brand-1 { color: var(--color-primary-brand-1); }
+        .text-primary-brand-2 { color: var(--color-primary-brand-2); }
+        .text-accent-light-1 { color: var(--color-accent-light-1); }
+        .text-accent-light-2 { color: var(--color-accent-light-2); }
+        .text-dark-surface { color: var(--color-dark-surface); } /* For contrast on brand colors */
+
+        /* Borders & Radius */
+        .border { border-width: 1px; border-style: solid; border-color: var(--color-accent-light-3); }
+        .border-2 { border-width: 2px; border-style: solid; border-color: var(--color-accent-light-3); }
+        .rounded-full { border-radius: 9999px; }
+
+        /* Specific Component Styles */
+        .site-header {
+            background-color: var(--color-accent-dark-2);
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--color-primary-brand-1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .site-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .site-logo {
+            font-size: var(--text-h3);
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            color: var(--color-primary-brand-2);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .hamburger-menu-button {
+            display: none; /* Hidden on desktop */
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            color: var(--color-accent-light-1);
+            font-size: var(--text-h2);
+            line-height: 1;
+        }
+        @media (max-width: 767px) {
+            .hamburger-menu-button {
+                display: block;
+            }
+            .site-nav {
+                display: none; /* Hidden by default on mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--color-accent-dark-2);
+                border-top: 1px solid var(--color-accent-light-3);
+                padding: 1rem 0;
+            }
+            .site-nav.is-active {
+                display: flex; /* Shown when active */
+            }
+            .site-nav ul {
+                flex-direction: column;
+            }
+            .site-nav li {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+            .site-nav a {
+                display: block;
+                padding: 0.75rem 0;
+                border-bottom: 1px solid var(--color-accent-dark-1);
+            }
+        }
+        .site-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        .site-nav a {
+            font-size: var(--text-body-lg);
+            font-weight: 600;
+            color: var(--color-accent-light-1);
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        .site-nav a:hover, .site-nav a.active {
+            color: var(--color-primary-brand-1);
+            text-decoration: none;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background-color: transparent; /* Main content background is body's */
+        }
+
+        .card {
+            border: 2px solid var(--color-primary-brand-2);
+            background-color: var(--color-accent-dark-1);
+            padding: 1.5rem;
+            box-shadow: 5px 5px 0px var(--color-primary-brand-1); /* Brutalist shadow */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px) translateX(-3px);
+            box-shadow: 8px 8px 0px var(--color-primary-brand-1);
+        }
+
+        .accordion-item {
+            border: 1px solid var(--color-accent-light-3);
+            background-color: var(--color-accent-dark-2);
+            margin-bottom: 1rem;
+        }
+        .accordion-header {
+            display: block;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: var(--text-body-lg);
+            font-weight: 600;
+            color: var(--color-primary-brand-2);
+            position: relative;
+            user-select: none;
+        }
+        .accordion-header::after {
+            content: '+';
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.2s ease;
+        }
+        .accordion-item[open] .accordion-header::after {
+            content: '-';
+            transform: translateY(-50%) rotate(0deg); /* No rotation needed for - */
+        }
+        .accordion-content {
+            padding: 0 1rem 1rem 1rem;
+            font-size: var(--text-body-base);
+            color: var(--color-accent-light-2);
+        }
+        .accordion-item[open] .accordion-content {
+            animation: slideDown 0.3s ease-out;
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-dark-surface); /* Changed for CTA contrast on brand color */
+            color: var(--color-primary-brand-1);
+            padding: 1rem 2.5rem;
+            font-size: var(--text-h4);
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 2px solid var(--color-primary-brand-1);
+            box-shadow: 4px 4px 0px var(--color-dark-surface); /* Adjusted shadow for brutalist */
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: var(--color-accent-dark-1);
+            color: var(--color-primary-brand-2);
+            border-color: var(--color-primary-brand-2);
+            box-shadow: 6px 6px 0px var(--color-accent-dark-1);
+            transform: translateY(-2px) translateX(-2px);
+        }
+
+        .site-footer {
+            background-color: var(--color-accent-dark-2);
+            padding: 2rem 0;
+            border-top: 2px solid var(--color-primary-brand-1);
+            text-align: center;
+        }
+        .site-footer p, .site-footer a {
+            color: var(--color-accent-light-2);
+            font-size: var(--text-body-sm);
+            margin-bottom: 0.5rem;
+        }
+        .site-footer a:hover {
+            color: var(--color-primary-brand-2);
+        }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .list-disc { list-style-type: disc; }
+        .list-inside { list-style-position: inside; }
+        .transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+        .duration-200 { transition-duration: 200ms; }
+        .duration-300 { transition-duration: 300ms; }
+        .hover\:text-primary-brand-2:hover { color: var(--color-primary-brand-2); }
+        .hover\:bg-accent-dark-1:hover { background-color: var(--color-accent-dark-1); }
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); } /* example */
+    </style>
+</head>
+<body>
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "풋쌤 동대문점",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "을지로 256 3층",
+        "addressLocality": "서울 중구",
+        "addressRegion": "서울",
+        "postalCode": "04560",
+        "addressCountry": "KR"
+      },
+      "telephone": "010-7789-6899",
+      "url": "https://example.com/footssaem-dongdaemun",
+      "priceRange": "₩₩",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "10:00",
+          "closes": "22:00"
+        }
+      ],
+      "image": "https://example.com/images/footssaem-dongdaemun-main.jpg",
+      "description": "서울 중구 을지로에 위치한 풋쌤 동대문점은 전문적인 마사지 서ᅥ비스를 제공합니다. 발 마사지, 전신 관리 등으로 지친 몸과 마음에 활력을 찾아드립니다.",
+      "hasMap": "https://map.naver.com/v5/search/%ED%92%8B%EC%8C%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EC%A0%90",
+      "sameAs": [
+        "https://blog.naver.com/footssaem",
+        "https://www.instagram.com/footssaem"
+      ]
+    }
+    </script>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="https://example.com/footssaem-dongdaemun" class="site-logo">풋쌤 동대문점</a>
+            <button class="hamburger-menu-button" aria-label="메뉴 열기">☰</button>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="https://example.com/footssaem-dongdaemun">홈</a></li>
+                    <li><a href="https://example.com/footssaem-dongdaemun/services">서비스</a></li>
+                    <li><a href="https://example.com/footssaem-dongdaemun/reviews">솔직 후기</a></li>
+                    <li><a href="https://example.com/footssaem-dongdaemun/faq" class="active">자주 묻는 질문</a></li>
+                    <li><a href="tel:010-7789-6899">예약 문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container grid grid-cols-1 md:grid-cols-12 gap-4 py-8">
+            <section class="col-span-full text-center py-12 bg-accent-dark-2">
+                <h1 class="text-h1 font-bold mb-4 text-primary-brand-1">자주 묻는 질문</h1>
+                <p class="text-body-lg text-accent-light-2 max-w-2xl mx-auto">
+                    을지로 밤거리를 밝히는 풋쌤 동대문점. 방문 전 궁금한 점들을 시원하게 풀어드릴게요.<br>
+                    마치 지하철 노선도를 따라가듯, 여러분의 질문에 대한 답을 쉽고 빠르게 찾아보세요!
+                </p>
+            </section>
+
+<div data-kwv="1" class="kv9d20vc" role="img" aria-label="서울 중구 을지로 256 3층
+010-7789-6899
+풋쌤 동대문점
+ 마사지 — 신뢰할 수 있는 서비스" 
+     style="display:flex;flex-direction:column;gap:80px;margin:120px auto;max-width:1100px;padding:0 24px">
+  <div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">01</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">SEO 대책</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">서울 중구 을지로 256 3층
+010-7789-6899
+풋쌤 동대문점
+</div>
+  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">02</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">집객 지원</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">서울 중구 을지로 256 3층
+010-7789-6899
+풋쌤 동대문점
+</div>
+  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">03</div>
+    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">분석</div>
+    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">서울 중구 을지로 256 3층
+010-7789-6899
+풋쌤 동대문점
+</div>
+  </div>
+</div>
+
+            <!-- FAQ Categories as "노선" -->
+            <section class="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
+                <div class="card p-6 bg-accent-dark-1 border-2 border-accent-light-3">
+                    <h3 class="text-h3 font-bold mb-4 text-accent-light-1">예약 및 이용 노선</h3>
+                    <div class="space-y-4">
+                        <details class="accordion-item bg-dark-surface p-4 border border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 예약은 어떻게 하나요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 전화(<a href="tel:010-7789-6899" class="text-primary-brand-2">010-7789-6899</a>)로 연락 주시거나, 매장 방문을 통해 예약하실 수 있습니다.
+                                원하시는 시간대와 프로그램이 있다면 미리 예약하시는 걸 츠천드려요!
+                                (당일 예약도 가능하지만, 원하는 시간대가 마감될 수도 있어요.)
+                            </div>
+                        </details>
+                        <details class="accordion-item bg-dark-surface p-4 border border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 당일 방문도 가능한가요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 네, 물론입니다! 하지만 예약 손님이 우선이므로, 미리 전화로 문의 주시면
+                                대기 시간을 줄이고 편안하게 이용하실 수 있습니다.
+                                갑자기 마사지가 받고 싶을 때, 언제든 연락 주세요!
+                            </div>
+                        </details>
+                        <details class="accordion-item bg-dark-surface p-4 border border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 늦으면 어떻게 되나요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 예약 시간보다 늦게 도착하시면, 다음 예약 손님을 위해
+                                마사지 시간이 단축될 수 엤습니다. 부득이하게 늦으실 경우,
+                                미리 전화(<a href="tel:010-7789-6899" class="text-primary-brand-2">010-7789-6899</a>)로 연락 주시면 감사하겠습니다.
+                                (서두르지 마시고, 안전하게 오세요!)
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="card p-6 bg-accent-dark-1 border-2 border-accent-light-3">
+                    <h3 class="text-h3 font-bold mb-4 text-accent-light-1">시설 및 편의 노선</h3>
+                    <div class="space-y-4">
+                        <details class="accordion-item bg-dark-surface p-4 border border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 주차는 어디에 해야 하나요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 저희 풋쌤 동대문점은 별도의 전용 주차 공간이 없습니다.
+                                인근 유료 주차장(을지로 2가 또는 동대문 디자인 플라자(DDP) 주차장 등)을
+                                이용해 주시거나, 대중교통 이용을 권장해 드립니다.
+                                (<a href="https://map.naver.com/v5/search/%EC%9D%84%EC%A7%80%EB%A1%9C3%EA%B0%80%EC%97%AD" target="_blank" class="text-primary-brand-2">을지로3가역</a> 1번 출구에서 도보 5분 거리!)
+                            </div>
+                        </details>
+                        <details class="accordion-item bg-dark-surface p-4 border border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 샤워 시설이 있나요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 죄송하지만, 현재 풋쌤 동대문점에는 샤워 시설이 별도로 마련되어 있지 않습니다.
+                                하지만 마사지 후 가볍게 정돈하실 수 있는 공간은 준비되어 있습니다.
+                                (뽀송뽀송하게 마무리하고 가실 수 있도록 도와드릴게요!)
+                            </div>
+                        </details>
+                        <details class="accordion-item bg-dark-surface p-4 border-2 border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 어떤 결제 수단을 이용할 수 있나요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 현금, 신용카드, 계좌이체 등 다양한 방법으로 결제가 가능합니다.
+                                편하신 방법으로 결제하시면 됩니다.
+                                (가끔 이벤트 시 현금 결제 혜택이 있을 수도? 소곤소곤!)
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="card p-6 bg-accent-dark-1 border-2 border-accent-light-3">
+                    <h3 class="text-h3 font-bold mb-4 text-accent-light-1">프로그램 및 서비스 노선</h3>
+                    <div class="space-y-4">
+                        <details class="accordion-item bg-dark-surface p-4 border-2 border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 마사지 강도 조절이 가능한가요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 네, 물론입니다! 관리사님께 원하시는 강도를 편하게 말씀해주세요.
+                                개인의 몸 상태와 선호도에 맞춰 섬세하게 조절해 드립니다.
+                                (아프면 아프다고, 시원하면 시원하다고 언제든 말씀해주세요!)
+                            </div>
+                        </details>
+                        <details class="accordion-item bg-dark-surface p-4 border-2 border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 어떤 프로그램이 가장 인기가 많나요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 저희 풋쌤 동대문점에서는 발 마사지가 단연 인기입니다!
+                                특히 '피로회복 발 관리'는 일상의 지친 발에 활력을 불어넣어 드려요.
+                                (하지만 전신 관리도 놓칠 수 없죠!)
+                            </div>
+                        </details>
+                        <details class="accordion-item bg-dark-surface p-4 border-2 border-accent-light-3">
+                            <summary class="accordion-header text-body-lg font-semibold cursor-pointer text-accent-light-1 hover:text-primary-brand-2 transition-colors duration-200">
+                                Q. 팁은 꼭 드려야 하나요?
+                            </summary>
+                            <div class="accordion-content pt-2 text-body-base text-accent-light-2">
+                                A. 팁은 고객님의 만족도에 따른 자율적인 부분입니다.
+                                강요하지 않으니 부담 없이 이용하시면 됩니다.
+                                (하지만 팁은 관리사님께 큰 힘이 된답니다!)
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Troubleshooting / Tips Section -->
+            <section class="col-span-full py-8 bg-accent-dark-2">
+                <h2 class="text-h2 font-bold text-center mb-6 text-primary-brand-1">이용 팁: 더 편안한 여정을 위해</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="card p-6 bg-dark-surface border-2 border-accent-light-3">
+                        <h3 class="text-h4 font-semibold mb-2 text-primary-brand-2">마사지 전/후 주의사항</h3>
+                        <ul class="list-disc list-inside text-body-base text-accent-light-2 space-y-2">
+                            <li>음주 후 마사지는 피해주세요.</li>
+                            <li>식사 직후보다는 1~2시간 뒤가 좋습니다.</li>
+                            <li>몸에 열이 있거나 컨디션이 좋지 않을 때는 전문가와 상담 후 결정하세요.</li>
+                            <li>마사지 후에는 미지근한 물을 충분히 마셔주는 것이 좋습니다.</li>
+                        </ul>
+                    </div>
+                    <div class="card p-6 bg-dark-surface border-2 border-accent-light-3">
+                        <h3 class="text-h4 font-semibold mb-2 text-primary-brand-2">개인별 맞춤 관리</h3>
+                        <ul class="list-disc list-inside text-body-base text-accent-light-2 space-y-2">
+                            <li>특정 부위 집중 관리를 원하시면 미리ᅵ 말씀해주세요.</li>
+                            <li>알레르기가 있거나 특정 오일에 민감하신 분은 꼭 알려주세요.</li>
+                            <li>임산부나 질환이 있으신 분은 반드시 예약 시 고지해 주셔야 합니다.</li>
+                            <li>불편한 점이 있다면 언제든 관리사님께 말씀해주세요.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="col-span-full text-center py-12 bg-primary-brand-1">
+                <h2 class="text-h2 font-bold mb-4 text-dark-surface">이제, 편안함의 조ᅩᆼ착역으로!</h2>
+                <p class="text-body-lg text-dark-surface max-w-2xl mx-auto mb-8">
+                    궁금증이 모두 해결되셨나요? 풋쌤 동대문점에서 일상의 피로를
+                    말끔히 씻어내고 진정한 휴식을 경험하세요.
+                    여러분의 편안한 방문을 기다립니다!
+                </p>
+                <a href="tel:010-7789-6899" class="cta-button bg-dark-surface text-primary-brand-1 hover:bg-accent-dark-1 hover:text-primary-brand-2 transition-colors duration-300 py-4 px-8 text-h4 font-bold rounded-full inline-block shadow-lg">
+                    지금 바로 예약하기 (010-7789-6899)
+                </a>
+            
+<div data-kwv="1" class="kv9d20vd" role="separator" aria-label="서울 중구 을지로 256 3층
+010-7789-6899
+풋쌤 동대문점
+ 구분선" style="margin:80px 0;height:1px;background:#666666;opacity:0.1"></div>
+</section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2023 풋쌤 동대문점. All rights reserved.</p>
+            <p>서울 중구 을지로 256 3층</p>
+            <p>문의: <a href="tel:010-7789-6899">010-7789-6899</a></p>
+            <p><a href="#">개인정보처리방침</a> | <a href="#">이용약관</a></p>
+        </div>
+    </footer>
+
+    <!-- Script for hamburger menu (basic toggle functionality) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerButton = document.querySelector('.hamburger-menu-button');
+            const navMenu = document.querySelector('.site-nav');
+
+            if (hamburgerButton && navMenu) {
+                hamburgerButton.addEventListener('click', function() {
+                    navMenu.classList.toggle('is-active');
+                    this.setAttribute('aria-expanded', navMenu.classList.contains('is-active'));
+                });
+            }
+        });
+    </script>
+</body>
+</html>
