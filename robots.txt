@@ -7,4 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://euljiro-body-care.namanavi.com/sitemap.xml
+Sitemap: https://dydrkrtks7-cmd.github.io/bp-t1-campaign-mqw1w2qy-5klg/sitemap.xml
